@@ -1,0 +1,85 @@
+body {
+  background: #334;
+  color: #bfd;
+  margin: 10px;
+  font-family: arial, tahoma;
+}
+#polling-container {
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+}
+hr {
+  line-height: 5px;
+  margin-left: -10px;
+  width: calc(100% + 18px);
+  border: 1px solid #445;
+  height: 0;
+}
+a {
+  color: #acf;
+  text-decoration: none;
+}
+.sectionTitle {
+  font-size: 1.1em;
+}
+.queryText {
+  color: #fff;
+  font-size: 18px;
+  background: #000;
+}
+.settings {
+  border-radius: 5px;
+  padding: 10px;
+  background: #667;
+  font-size: 16px;
+  height: 55px;
+}
+.queries {
+  background: #667;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+input[type=checkbox]{
+  transform: scale(1.5);
+}
+.minimizeSettingsButton {
+  padding: 5px;
+  background: #556;
+  border: 1px solid #888;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button:focus {outline:0;}
+
+.titleText {
+  width: 50%;
+}
+ul {
+  list-style-type: none;
+  margin-bottom: 50px;
+}
+.container-transition-enter,
+  .container-transition-leave-to {
+  opacity: 0;
+  transform: rotateX(90deg);
+  height: 0;
+  padding: 0;
+}
+.container-transition-enter-to,
+  .container-transition-leave {
+  opacity: 1;
+  transform: rotateX(0deg);
+  height: 55px;
+  padding: 10px;
+}
+.container-transition-enter-active,
+  .container-transition-leave-active {
+  transition: opacity 0.3s, transform 0.3s, height 0.3s, padding 0.3s;
+}
